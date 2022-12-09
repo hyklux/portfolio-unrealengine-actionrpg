@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Invalid|x64">
+      <Configuration>Invalid</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Invalid|arm64">
+      <Configuration>Invalid</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Invalid|Android-arm64-v8a">
+      <Configuration>Invalid</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Program|x64">
+      <Configuration>Debug_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Program|arm64">
+      <Configuration>Debug_Program</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Program|Android-arm64-v8a">
+      <Configuration>Debug_Program</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Program|x64">
+      <Configuration>DebugGame_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Program|arm64">
+      <Configuration>DebugGame_Program</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Program|Android-arm64-v8a">
+      <Configuration>DebugGame_Program</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Program|x64">
+      <Configuration>Development_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Program|arm64">
+      <Configuration>Development_Program</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Program|Android-arm64-v8a">
+      <Configuration>Development_Program</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test_Program|x64">
+      <Configuration>Test_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test_Program|arm64">
+      <Configuration>Test_Program</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test_Program|Android-arm64-v8a">
+      <Configuration>Test_Program</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping_Program|x64">
+      <Configuration>Shipping_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping_Program|arm64">
+      <Configuration>Shipping_Program</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping_Program|Android-arm64-v8a">
+      <Configuration>Shipping_Program</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F706D797-C0A8-36C9-BA7B-550A7AF8FEB5}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <RootNamespace>MonsterLauncher</RootNamespace>
+    <PlatformToolset>v142</PlatformToolset>
+    <MinimumVisualStudioVersion>16.0</MinimumVisualStudioVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <NMakeUseOemCodePage>true</NMakeUseOemCodePage>
+    <TargetRuntime>Native</TargetRuntime>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|x64'">
+    <NMakeBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeCleanCommandLine>
+    <NMakeOutput>Invalid Output</NMakeOutput>
+    <OutDir>C:\UnrealEngine5\Engine\Intermediate\Build\Unused\</OutDir>
+    <IntDir>C:\UnrealEngine5\Engine\Intermediate\Build\Unused\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|arm64'">
+    <NMakeBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeCleanCommandLine>
+    <NMakeOutput>Invalid Output</NMakeOutput>
+    <OutDir>C:\UnrealEngine5\Engine\Intermediate\Build\Unused\</OutDir>
+    <IntDir>C:\UnrealEngine5\Engine\Intermediate\Build\Unused\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|Android-arm64-v8a'">
+    <NMakeBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeCleanCommandLine>
+    <NMakeOutput>Invalid Output</NMakeOutput>
+    <OutDir>C:\UnrealEngine5\Engine\Intermediate\Build\Unused\</OutDir>
+    <IntDir>C:\UnrealEngine5\Engine\Intermediate\Build\Unused\</IntDir>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat MonsterLauncher Win64 Debug -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat MonsterLauncher Win64 Debug -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat MonsterLauncher Win64 Debug -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Win64\MonsterLauncher-Win64-Debug.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|arm64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|arm64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat MonsterLauncher HoloLens Debug -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat MonsterLauncher HoloLens Debug -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat MonsterLauncher HoloLens Debug -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\HoloLens\MonsterLauncher-HoloLens-Debug.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|Android-arm64-v8a'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|Android-arm64-v8a'">
+    <AndroidApkLocation>C:\UnrealEngine5\Engine\Binaries\Android\MonsterLauncher-Android-Debug-arm64.apk</AndroidApkLocation>
+    <AndroidSymbolDirectories>C:\UnrealEngine5\Engine\Intermediate\Android\arm64\jni\arm64-v8a;C:\UnrealEngine5\Engine\Intermediate\Android\arm64\libs\arm64-v8a</AndroidSymbolDirectories>
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat MonsterLauncher Android Debug -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat MonsterLauncher Android Debug -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat MonsterLauncher Android Debug -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Android\MonsterLauncher-Android-Debug.so</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat MonsterLauncher Win64 DebugGame -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat MonsterLauncher Win64 DebugGame -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat MonsterLauncher Win64 DebugGame -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Win64\MonsterLauncher-Win64-DebugGame.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|arm64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|arm64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat MonsterLauncher HoloLens DebugGame -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat MonsterLauncher HoloLens DebugGame -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat MonsterLauncher HoloLens DebugGame -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\HoloLens\MonsterLauncher-HoloLens-DebugGame.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|Android-arm64-v8a'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|Android-arm64-v8a'">
+    <AndroidApkLocation>C:\UnrealEngine5\Engine\Binaries\Android\MonsterLauncher-Android-DebugGame-arm64.apk</AndroidApkLocation>
+    <AndroidSymbolDirectories>C:\UnrealEngine5\Engine\Intermediate\Android\arm64\jni\arm64-v8a;C:\UnrealEngine5\Engine\Intermediate\Android\arm64\libs\arm64-v8a</AndroidSymbolDirectories>
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat MonsterLauncher Android DebugGame -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat MonsterLauncher Android DebugGame -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat MonsterLauncher Android DebugGame -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Android\MonsterLauncher-Android-DebugGame.so</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat MonsterLauncher Win64 Development -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat MonsterLauncher Win64 Development -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat MonsterLauncher Win64 Development -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Win64\MonsterLauncher.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|arm64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|arm64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat MonsterLauncher HoloLens Development -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat MonsterLauncher HoloLens Development -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat MonsterLauncher HoloLens Development -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\HoloLens\MonsterLauncher.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|Android-arm64-v8a'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|Android-arm64-v8a'">
+    <AndroidApkLocation>C:\UnrealEngine5\Engine\Binaries\Android\MonsterLauncher-arm64.apk</AndroidApkLocation>
+    <AndroidSymbolDirectories>C:\UnrealEngine5\Engine\Intermediate\Android\arm64\jni\arm64-v8a;C:\UnrealEngine5\Engine\Intermediate\Android\arm64\libs\arm64-v8a</AndroidSymbolDirectories>
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat MonsterLauncher Android Development -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat MonsterLauncher Android Development -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat MonsterLauncher Android Development -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Android\MonsterLauncher.so</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat MonsterLauncher Win64 Test -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat MonsterLauncher Win64 Test -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat MonsterLauncher Win64 Test -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Win64\MonsterLauncher-Win64-Test.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|arm64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|arm64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat MonsterLauncher HoloLens Test -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat MonsterLauncher HoloLens Test -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat MonsterLauncher HoloLens Test -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\HoloLens\MonsterLauncher-HoloLens-Test.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|Android-arm64-v8a'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|Android-arm64-v8a'">
+    <AndroidApkLocation>C:\UnrealEngine5\Engine\Binaries\Android\MonsterLauncher-Android-Test-arm64.apk</AndroidApkLocation>
+    <AndroidSymbolDirectories>C:\UnrealEngine5\Engine\Intermediate\Android\arm64\jni\arm64-v8a;C:\UnrealEngine5\Engine\Intermediate\Android\arm64\libs\arm64-v8a</AndroidSymbolDirectories>
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat MonsterLauncher Android Test -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat MonsterLauncher Android Test -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat MonsterLauncher Android Test -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Android\MonsterLauncher-Android-Test.so</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat MonsterLauncher Win64 Shipping -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat MonsterLauncher Win64 Shipping -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat MonsterLauncher Win64 Shipping -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Win64\MonsterLauncher-Win64-Shipping.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|arm64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|arm64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat MonsterLauncher HoloLens Shipping -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat MonsterLauncher HoloLens Shipping -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat MonsterLauncher HoloLens Shipping -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\HoloLens\MonsterLauncher-HoloLens-Shipping.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|Android-arm64-v8a'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|Android-arm64-v8a'">
+    <AndroidApkLocation>C:\UnrealEngine5\Engine\Binaries\Android\MonsterLauncher-Android-Shipping-arm64.apk</AndroidApkLocation>
+    <AndroidSymbolDirectories>C:\UnrealEngine5\Engine\Intermediate\Android\arm64\jni\arm64-v8a;C:\UnrealEngine5\Engine\Intermediate\Android\arm64\libs\arm64-v8a</AndroidSymbolDirectories>
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat MonsterLauncher Android Shipping -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat MonsterLauncher Android Shipping -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat MonsterLauncher Android Shipping -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Android\MonsterLauncher-Android-Shipping.so</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <IncludePath>$(IncludePath);C:\UnrealEngine5\Engine\Source;C:\UnrealEngine5\Engine\Source\Runtime\Launch\Private;C:\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\Data;C:\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\SlateWidget;C:\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\Tools;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Inc\AppFramework;C:\UnrealEngine5\Engine\Source\Runtime;C:\UnrealEngine5\Engine\Source\Runtime\AppFramework\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Inc\Core;C:\UnrealEngine5\Engine\Source\Runtime\TraceLog\Public;C:\UnrealEngine5\Engine\Source\Runtime\Core\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Inc\TraceLog;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Inc\CoreUObject;C:\UnrealEngine5\Engine\Source\Runtime\CoreUObject\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Inc\ApplicationCore;C:\UnrealEngine5\Engine\Source\Runtime\ApplicationCore\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Inc\RHI;C:\UnrealEngine5\Engine\Source\Runtime\RHI\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Inc\Slate;C:\UnrealEngine5\Engine\Source\Runtime\Slate\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Inc\InputCore;C:\UnrealEngine5\Engine\Source\Runtime\InputCore\Classes;C:\UnrealEngine5\Engine\Source\Runtime\InputCore\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Inc\Json;C:\UnrealEngine5\Engine\Source\Runtime\Json\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Inc\SlateCore;C:\UnrealEngine5\Engine\Source\Runtime\SlateCore\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Inc\ImageWrapper;C:\UnrealEngine5\Engine\Source\Runtime\ImageWrapper\Public;C:\UnrealEngine5\Engine\Source\ThirdParty;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Inc\Projects;C:\UnrealEngine5\Engine\Source\Runtime\Projects\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Inc\DesktopPlatform;C:\UnrealEngine5\Engine\Source\Developer;C:\UnrealEngine5\Engine\Source\Developer\DesktopPlatform\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Inc\SlateReflector;C:\UnrealEngine5\Engine\Source\Developer\SlateReflector\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Inc\StandaloneRenderer;C:\UnrealEngine5\Engine\Source\Developer\StandaloneRenderer\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Inc\WebBrowser;C:\UnrealEngine5\Engine\Source\Runtime\WebBrowser\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Inc\SourceCodeAccess;C:\UnrealEngine5\Engine\Source\Developer\SourceCodeAccess\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Inc\Settings;C:\UnrealEngine5\Engine\Source\Developer\Settings\Public;C:\UnrealEngine5\Engine\Source\ThirdParty\OpenGL;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Inc\HTTP;C:\UnrealEngine5\Engine\Source\Runtime\Online;C:\UnrealEngine5\Engine\Source\Runtime\Online\HTTP\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Inc\MonsterLauncher;C:\UnrealEngine5\Engine\Source\Programs;C:\UnrealEngine5\Engine\Source\Runtime\Launch\Public;C:\UnrealEngine5\Engine\Source\Runtime\Core\Public\Containers;C:\UnrealEngine5\Engine\Source\Runtime\Core\Public\Misc;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\INCLUDE;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.2\include\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt;;</IncludePath>
+    <NMakeForcedIncludes>$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeAssemblySearchPath>$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\MonsterLauncher.Target.cs"/>
+    <None Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\MonsterLauncher.Build.cs"/>
+    <None Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Resources\Icon.ico"/>
+    <None Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Resources\Icon_config.ico"/>
+    <None Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Resources\Resource.aps"/>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Resources\Resource.h"/>
+    <ResourceCompile Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Resources\Resource.rc"/>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Resources\VersionResource.inl"/>
+    <None Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\MonsterLauncher.Build.cs"/>
+    <ClCompile Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\MonsterLauncher.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\UnrealEngine5\Engine\Source\ThirdParty\mimalloc\include;C:\UnrealEngine5\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\UnrealEngine5\Engine\Source\ThirdParty\LibTiff\Source;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Development\Slate\SharedPCH.Slate.ShadowErrors.h;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Development\MonsterLauncher\Definitions.MonsterLauncher.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\MonsterLauncher.h"/>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\Data\NMLaunchConfig.h"/>
+    <ClCompile Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\SlateWidget\NMComboBoxWarper.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\UnrealEngine5\Engine\Source\ThirdParty\mimalloc\include;C:\UnrealEngine5\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\UnrealEngine5\Engine\Source\ThirdParty\LibTiff\Source;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Development\Slate\SharedPCH.Slate.ShadowErrors.h;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Development\MonsterLauncher\Definitions.MonsterLauncher.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\SlateWidget\NMComboBoxWarper.h"/>
+    <ClCompile Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\SlateWidget\NMConfigListPanel.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\UnrealEngine5\Engine\Source\ThirdParty\mimalloc\include;C:\UnrealEngine5\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\UnrealEngine5\Engine\Source\ThirdParty\LibTiff\Source;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Development\Slate\SharedPCH.Slate.ShadowErrors.h;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Development\MonsterLauncher\Definitions.MonsterLauncher.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\SlateWidget\NMConfigListPanel.h"/>
+    <ClCompile Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\SlateWidget\NMConfigPanel.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\UnrealEngine5\Engine\Source\ThirdParty\mimalloc\include;C:\UnrealEngine5\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\UnrealEngine5\Engine\Source\ThirdParty\LibTiff\Source;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Development\Slate\SharedPCH.Slate.ShadowErrors.h;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Development\MonsterLauncher\Definitions.MonsterLauncher.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\SlateWidget\NMConfigPanel.h"/>
+    <ClCompile Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\SlateWidget\NMEditableBoxWraper.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\UnrealEngine5\Engine\Source\ThirdParty\mimalloc\include;C:\UnrealEngine5\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\UnrealEngine5\Engine\Source\ThirdParty\LibTiff\Source;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Development\Slate\SharedPCH.Slate.ShadowErrors.h;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Development\MonsterLauncher\Definitions.MonsterLauncher.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\SlateWidget\NMEditableBoxWraper.h"/>
+    <ClCompile Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\Tools\NMEngineLaunchTools.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\UnrealEngine5\Engine\Source\ThirdParty\mimalloc\include;C:\UnrealEngine5\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\UnrealEngine5\Engine\Source\ThirdParty\LibTiff\Source;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Development\Slate\SharedPCH.Slate.ShadowErrors.h;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\MonsterLauncher\Development\MonsterLauncher\Definitions.MonsterLauncher.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\Tools\NMEngineLaunchTools.h"/>
+  </ItemGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <PropertyGroup>
+    <CleanDependsOn> $(CleanDependsOn); </CleanDependsOn>
+    <CppCleanDependsOn></CppCleanDependsOn>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

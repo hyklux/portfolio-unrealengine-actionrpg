@@ -1,0 +1,21 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\ueprojects\\actionrpg\\intermediate\\build\\win64\\unrealeditor\\inc\\actionrpg\\actionrpgcharacter.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unrealengine5\\engine\\intermediate\\build\\win64\\unrealeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\ueprojects\\actionrpg\\intermediate\\build\\win64\\unrealeditor\\development\\actionrpg\\definitions.actionrpg.h",
+            "c:\\ueprojects\\actionrpg\\source\\actionrpg\\actionrpgcharacter.h",
+            "c:\\unrealengine5\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "c:\\unrealengine5\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "c:\\unrealengine5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\charactermovementreplication.generated.h",
+            "c:\\unrealengine5\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "c:\\unrealengine5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\rootmotionsource.generated.h",
+            "c:\\unrealengine5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\character.generated.h",
+            "c:\\ueprojects\\actionrpg\\intermediate\\build\\win64\\unrealeditor\\inc\\actionrpg\\actionrpgcharacter.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

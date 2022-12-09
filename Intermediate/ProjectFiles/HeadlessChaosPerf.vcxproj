@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Invalid|x64">
+      <Configuration>Invalid</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Invalid|arm64">
+      <Configuration>Invalid</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Invalid|Android-arm64-v8a">
+      <Configuration>Invalid</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Program|x64">
+      <Configuration>Debug_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Program|arm64">
+      <Configuration>Debug_Program</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Program|Android-arm64-v8a">
+      <Configuration>Debug_Program</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Program|x64">
+      <Configuration>DebugGame_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Program|arm64">
+      <Configuration>DebugGame_Program</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Program|Android-arm64-v8a">
+      <Configuration>DebugGame_Program</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Program|x64">
+      <Configuration>Development_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Program|arm64">
+      <Configuration>Development_Program</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Program|Android-arm64-v8a">
+      <Configuration>Development_Program</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test_Program|x64">
+      <Configuration>Test_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test_Program|arm64">
+      <Configuration>Test_Program</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test_Program|Android-arm64-v8a">
+      <Configuration>Test_Program</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping_Program|x64">
+      <Configuration>Shipping_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping_Program|arm64">
+      <Configuration>Shipping_Program</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping_Program|Android-arm64-v8a">
+      <Configuration>Shipping_Program</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7314C07E-19BD-3D01-8CD5-733FC8B2FD3F}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <RootNamespace>HeadlessChaosPerf</RootNamespace>
+    <PlatformToolset>v142</PlatformToolset>
+    <MinimumVisualStudioVersion>16.0</MinimumVisualStudioVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <NMakeUseOemCodePage>true</NMakeUseOemCodePage>
+    <TargetRuntime>Native</TargetRuntime>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|x64'">
+    <NMakeBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeCleanCommandLine>
+    <NMakeOutput>Invalid Output</NMakeOutput>
+    <OutDir>C:\UnrealEngine5\Engine\Intermediate\Build\Unused\</OutDir>
+    <IntDir>C:\UnrealEngine5\Engine\Intermediate\Build\Unused\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|arm64'">
+    <NMakeBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeCleanCommandLine>
+    <NMakeOutput>Invalid Output</NMakeOutput>
+    <OutDir>C:\UnrealEngine5\Engine\Intermediate\Build\Unused\</OutDir>
+    <IntDir>C:\UnrealEngine5\Engine\Intermediate\Build\Unused\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|Android-arm64-v8a'">
+    <NMakeBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeCleanCommandLine>
+    <NMakeOutput>Invalid Output</NMakeOutput>
+    <OutDir>C:\UnrealEngine5\Engine\Intermediate\Build\Unused\</OutDir>
+    <IntDir>C:\UnrealEngine5\Engine\Intermediate\Build\Unused\</IntDir>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat HeadlessChaosPerf Win64 Debug -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat HeadlessChaosPerf Win64 Debug -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat HeadlessChaosPerf Win64 Debug -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Win64\NotForLicensees\HeadlessChaosPerf-Win64-Debug.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|arm64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|arm64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat HeadlessChaosPerf HoloLens Debug -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat HeadlessChaosPerf HoloLens Debug -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat HeadlessChaosPerf HoloLens Debug -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\HoloLens\NotForLicensees\HeadlessChaosPerf-HoloLens-Debug.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|Android-arm64-v8a'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|Android-arm64-v8a'">
+    <AndroidApkLocation>C:\UnrealEngine5\Engine\Binaries\Android\NotForLicensees\HeadlessChaosPerf-Android-Debug-arm64.apk</AndroidApkLocation>
+    <AndroidSymbolDirectories>C:\UnrealEngine5\Engine\Binaries\Intermediate\Android\arm64\jni\arm64-v8a;C:\UnrealEngine5\Engine\Binaries\Intermediate\Android\arm64\libs\arm64-v8a</AndroidSymbolDirectories>
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat HeadlessChaosPerf Android Debug -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat HeadlessChaosPerf Android Debug -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat HeadlessChaosPerf Android Debug -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Android\NotForLicensees\HeadlessChaosPerf-Android-Debug.so</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat HeadlessChaosPerf Win64 DebugGame -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat HeadlessChaosPerf Win64 DebugGame -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat HeadlessChaosPerf Win64 DebugGame -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Win64\NotForLicensees\HeadlessChaosPerf-Win64-DebugGame.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|arm64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|arm64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat HeadlessChaosPerf HoloLens DebugGame -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat HeadlessChaosPerf HoloLens DebugGame -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat HeadlessChaosPerf HoloLens DebugGame -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\HoloLens\NotForLicensees\HeadlessChaosPerf-HoloLens-DebugGame.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|Android-arm64-v8a'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|Android-arm64-v8a'">
+    <AndroidApkLocation>C:\UnrealEngine5\Engine\Binaries\Android\NotForLicensees\HeadlessChaosPerf-Android-DebugGame-arm64.apk</AndroidApkLocation>
+    <AndroidSymbolDirectories>C:\UnrealEngine5\Engine\Binaries\Intermediate\Android\arm64\jni\arm64-v8a;C:\UnrealEngine5\Engine\Binaries\Intermediate\Android\arm64\libs\arm64-v8a</AndroidSymbolDirectories>
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat HeadlessChaosPerf Android DebugGame -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat HeadlessChaosPerf Android DebugGame -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat HeadlessChaosPerf Android DebugGame -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Android\NotForLicensees\HeadlessChaosPerf-Android-DebugGame.so</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat HeadlessChaosPerf Win64 Development -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat HeadlessChaosPerf Win64 Development -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat HeadlessChaosPerf Win64 Development -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Win64\NotForLicensees\HeadlessChaosPerf.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|arm64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|arm64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat HeadlessChaosPerf HoloLens Development -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat HeadlessChaosPerf HoloLens Development -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat HeadlessChaosPerf HoloLens Development -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\HoloLens\NotForLicensees\HeadlessChaosPerf.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|Android-arm64-v8a'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|Android-arm64-v8a'">
+    <AndroidApkLocation>C:\UnrealEngine5\Engine\Binaries\Android\NotForLicensees\HeadlessChaosPerf-arm64.apk</AndroidApkLocation>
+    <AndroidSymbolDirectories>C:\UnrealEngine5\Engine\Binaries\Intermediate\Android\arm64\jni\arm64-v8a;C:\UnrealEngine5\Engine\Binaries\Intermediate\Android\arm64\libs\arm64-v8a</AndroidSymbolDirectories>
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat HeadlessChaosPerf Android Development -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat HeadlessChaosPerf Android Development -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat HeadlessChaosPerf Android Development -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Android\NotForLicensees\HeadlessChaosPerf.so</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat HeadlessChaosPerf Win64 Test -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat HeadlessChaosPerf Win64 Test -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat HeadlessChaosPerf Win64 Test -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Win64\NotForLicensees\HeadlessChaosPerf-Win64-Test.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|arm64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|arm64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat HeadlessChaosPerf HoloLens Test -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat HeadlessChaosPerf HoloLens Test -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat HeadlessChaosPerf HoloLens Test -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\HoloLens\NotForLicensees\HeadlessChaosPerf-HoloLens-Test.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|Android-arm64-v8a'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|Android-arm64-v8a'">
+    <AndroidApkLocation>C:\UnrealEngine5\Engine\Binaries\Android\NotForLicensees\HeadlessChaosPerf-Android-Test-arm64.apk</AndroidApkLocation>
+    <AndroidSymbolDirectories>C:\UnrealEngine5\Engine\Binaries\Intermediate\Android\arm64\jni\arm64-v8a;C:\UnrealEngine5\Engine\Binaries\Intermediate\Android\arm64\libs\arm64-v8a</AndroidSymbolDirectories>
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat HeadlessChaosPerf Android Test -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat HeadlessChaosPerf Android Test -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat HeadlessChaosPerf Android Test -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Android\NotForLicensees\HeadlessChaosPerf-Android-Test.so</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat HeadlessChaosPerf Win64 Shipping -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat HeadlessChaosPerf Win64 Shipping -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat HeadlessChaosPerf Win64 Shipping -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Win64\NotForLicensees\HeadlessChaosPerf-Win64-Shipping.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|arm64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|arm64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat HeadlessChaosPerf HoloLens Shipping -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat HeadlessChaosPerf HoloLens Shipping -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat HeadlessChaosPerf HoloLens Shipping -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\HoloLens\NotForLicensees\HeadlessChaosPerf-HoloLens-Shipping.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|Android-arm64-v8a'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|Android-arm64-v8a'">
+    <AndroidApkLocation>C:\UnrealEngine5\Engine\Binaries\Android\NotForLicensees\HeadlessChaosPerf-Android-Shipping-arm64.apk</AndroidApkLocation>
+    <AndroidSymbolDirectories>C:\UnrealEngine5\Engine\Binaries\Intermediate\Android\arm64\jni\arm64-v8a;C:\UnrealEngine5\Engine\Binaries\Intermediate\Android\arm64\libs\arm64-v8a</AndroidSymbolDirectories>
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat HeadlessChaosPerf Android Shipping -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat HeadlessChaosPerf Android Shipping -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat HeadlessChaosPerf Android Shipping -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Android\NotForLicensees\HeadlessChaosPerf-Android-Shipping.so</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <IncludePath>$(IncludePath);C:\UnrealEngine5\Engine\Source;C:\UnrealEngine5\Engine\Source\Runtime\Launch\Private;C:\UnrealEngine5\Engine\Source\Programs\HeadlessChaosPerf\Private;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\HeadlessChaosPerf\Inc\ApplicationCore;C:\UnrealEngine5\Engine\Source\Runtime;C:\UnrealEngine5\Engine\Source\Runtime\ApplicationCore\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\HeadlessChaosPerf\Inc\Core;C:\UnrealEngine5\Engine\Source\Runtime\TraceLog\Public;C:\UnrealEngine5\Engine\Source\Runtime\Core\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\HeadlessChaosPerf\Inc\TraceLog;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\HeadlessChaosPerf\Inc\RHI;C:\UnrealEngine5\Engine\Source\Runtime\RHI\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\HeadlessChaosPerf\Inc\CoreUObject;C:\UnrealEngine5\Engine\Source\Runtime\CoreUObject\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\HeadlessChaosPerf\Inc\Projects;C:\UnrealEngine5\Engine\Source\Runtime\Projects\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\HeadlessChaosPerf\Inc\Json;C:\UnrealEngine5\Engine\Source\Runtime\Json\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\HeadlessChaosPerf\Inc\GeometryCore;C:\UnrealEngine5\Engine\Source\Runtime\Engine\Public;C:\UnrealEngine5\Engine\Source\Runtime\GeometryCore\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\HeadlessChaosPerf\Inc\AnimationCore;C:\UnrealEngine5\Engine\Source\Runtime\AnimationCore\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\HeadlessChaosPerf\Inc\ChaosVehiclesCore;C:\UnrealEngine5\Engine\Source\Runtime\Experimental\ChaosVehicles;C:\UnrealEngine5\Engine\Source\Runtime\Experimental\ChaosVehicles\ChaosVehiclesCore\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\HeadlessChaosPerf\Inc\Chaos;C:\UnrealEngine5\Engine\Source\Runtime\Experimental;C:\UnrealEngine5\Engine\Source\Runtime\Experimental\Chaos\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\HeadlessChaosPerf\Inc\ChaosCore;C:\UnrealEngine5\Engine\Source\Runtime\Experimental\ChaosCore\Public;C:\UnrealEngine5\Engine\Source\ThirdParty\Intel;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\HeadlessChaosPerf\Inc\Voronoi;C:\UnrealEngine5\Engine\Source\Runtime\Experimental\Voronoi\Public;C:\UnrealEngine5\Engine\Source\ThirdParty;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\HeadlessChaosPerf\Inc\HeadlessChaosPerf;C:\UnrealEngine5\Engine\Source\Programs;C:\UnrealEngine5\Engine\Source\Runtime\Launch\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\HeadlessChaosPerf\Inc\PhysicsCore;C:\UnrealEngine5\Engine\Source\Runtime\PhysicsCore\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\HeadlessChaosPerf\Inc\DeveloperSettings;C:\UnrealEngine5\Engine\Source\Runtime\DeveloperSettings\Public;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\INCLUDE;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.2\include\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt;;</IncludePath>
+    <NMakeForcedIncludes>$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeAssemblySearchPath>$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\HeadlessChaosPerf\HeadlessChaosPerf.Target.cs"/>
+    <None Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\HeadlessChaosPerf\HeadlessChaosPerf.Build.cs"/>
+    <ClCompile Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\HeadlessChaosPerf\Private\HeadlessChaosPerfApp.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\UnrealEngine5\Engine\Source\ThirdParty\mimalloc\include;C:\UnrealEngine5\Engine\Source\ThirdParty\GoogleTest\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\UnrealEngine5\Engine\Intermediate\Build\Win64\HeadlessChaosPerf\Development\CoreUObject\SharedPCH.CoreUObject.ShadowErrors.h;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\HeadlessChaosPerf\Development\HeadlessChaosPerf\Definitions.HeadlessChaosPerf.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\HeadlessChaosPerf\Private\ChaosPerf\ChaosPerf.h"/>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\HeadlessChaosPerf\Private\ChaosPerf\ChaosPerfLog.h"/>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\HeadlessChaosPerf\Private\ChaosPerf\ChaosPerfProfiling.h"/>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\HeadlessChaosPerf\Private\ChaosPerf\ChaosPerfTest.h"/>
+    <ClCompile Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\HeadlessChaosPerf\Private\ChaosPerf\PerfTests\ChaosPerfProfilerTests.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\UnrealEngine5\Engine\Source\ThirdParty\mimalloc\include;C:\UnrealEngine5\Engine\Source\ThirdParty\GoogleTest\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\UnrealEngine5\Engine\Intermediate\Build\Win64\HeadlessChaosPerf\Development\CoreUObject\SharedPCH.CoreUObject.ShadowErrors.h;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\HeadlessChaosPerf\Development\HeadlessChaosPerf\Definitions.HeadlessChaosPerf.h</ForcedIncludeFiles>
+    </ClCompile>
+  </ItemGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <PropertyGroup>
+    <CleanDependsOn> $(CleanDependsOn); </CleanDependsOn>
+    <CppCleanDependsOn></CppCleanDependsOn>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

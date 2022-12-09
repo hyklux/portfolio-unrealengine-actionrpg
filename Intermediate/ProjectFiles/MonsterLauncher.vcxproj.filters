@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\MonsterLauncher.Target.cs" />
+    <None Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\MonsterLauncher.Build.cs" />
+    <Filter Include="Resources">
+      <UniqueIdentifier>{DDCF50C2-9294-3441-8F3F-7C1BBC892CB5}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Resources\Icon.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Resources\Icon_config.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Resources\Resource.aps">
+      <Filter>Resources</Filter>
+    </None>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Resources\Resource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ResourceCompile Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Resources\Resource.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Resources\VersionResource.inl">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\MonsterLauncher.Build.cs">
+      <Filter>Source</Filter>
+    </None>
+    <ClCompile Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\MonsterLauncher.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\MonsterLauncher.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <Filter Include="Source\Data">
+      <UniqueIdentifier>{E0CC8E64-D738-3863-BD7A-6D1F3411842F}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\Data\NMLaunchConfig.h">
+      <Filter>Source\Data</Filter>
+    </ClInclude>
+    <Filter Include="Source\SlateWidget">
+      <UniqueIdentifier>{E73C2224-3123-3302-9640-752B2554153F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\SlateWidget\NMComboBoxWarper.cpp">
+      <Filter>Source\SlateWidget</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\SlateWidget\NMComboBoxWarper.h">
+      <Filter>Source\SlateWidget</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\SlateWidget\NMConfigListPanel.cpp">
+      <Filter>Source\SlateWidget</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\SlateWidget\NMConfigListPanel.h">
+      <Filter>Source\SlateWidget</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\SlateWidget\NMConfigPanel.cpp">
+      <Filter>Source\SlateWidget</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\SlateWidget\NMConfigPanel.h">
+      <Filter>Source\SlateWidget</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\SlateWidget\NMEditableBoxWraper.cpp">
+      <Filter>Source\SlateWidget</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\SlateWidget\NMEditableBoxWraper.h">
+      <Filter>Source\SlateWidget</Filter>
+    </ClInclude>
+    <Filter Include="Source\Tools">
+      <UniqueIdentifier>{428B62DC-D060-3B6E-9D28-3B9AA8F9E22D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\Tools\NMEngineLaunchTools.cpp">
+      <Filter>Source\Tools</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\UnrealEngine5\Engine\Source\Programs\MonsterLauncher\Source\Tools\NMEngineLaunchTools.h">
+      <Filter>Source\Tools</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

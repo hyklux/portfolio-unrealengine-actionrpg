@@ -1,0 +1,736 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Invalid|x64">
+      <Configuration>Invalid</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Invalid|arm64">
+      <Configuration>Invalid</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Invalid|Android-arm64-v8a">
+      <Configuration>Invalid</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|arm64">
+      <Configuration>Debug</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Android-arm64-v8a">
+      <Configuration>Debug</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Editor|x64">
+      <Configuration>Debug_Editor</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Editor|arm64">
+      <Configuration>Debug_Editor</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Editor|Android-arm64-v8a">
+      <Configuration>Debug_Editor</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame|x64">
+      <Configuration>DebugGame</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame|arm64">
+      <Configuration>DebugGame</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame|Android-arm64-v8a">
+      <Configuration>DebugGame</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Editor|x64">
+      <Configuration>DebugGame_Editor</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Editor|arm64">
+      <Configuration>DebugGame_Editor</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Editor|Android-arm64-v8a">
+      <Configuration>DebugGame_Editor</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development|x64">
+      <Configuration>Development</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development|arm64">
+      <Configuration>Development</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development|Android-arm64-v8a">
+      <Configuration>Development</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Editor|x64">
+      <Configuration>Development_Editor</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Editor|arm64">
+      <Configuration>Development_Editor</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Editor|Android-arm64-v8a">
+      <Configuration>Development_Editor</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test|x64">
+      <Configuration>Test</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test|arm64">
+      <Configuration>Test</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test|Android-arm64-v8a">
+      <Configuration>Test</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping|x64">
+      <Configuration>Shipping</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping|arm64">
+      <Configuration>Shipping</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping|Android-arm64-v8a">
+      <Configuration>Shipping</Configuration>
+      <Platform>Android-arm64-v8a</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5C176E1F-623D-3946-82F6-C51674CE723D}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <RootNamespace>ActionRPG</RootNamespace>
+    <PlatformToolset>v142</PlatformToolset>
+    <MinimumVisualStudioVersion>16.0</MinimumVisualStudioVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <NMakeUseOemCodePage>true</NMakeUseOemCodePage>
+    <TargetRuntime>Native</TargetRuntime>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Editor|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Editor|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Editor|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Editor|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|Android-arm64-v8a'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|x64'">
+    <NMakeBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeCleanCommandLine>
+    <NMakeOutput>Invalid Output</NMakeOutput>
+    <OutDir>C:\UnrealEngine5\Engine\Intermediate\Build\Unused\</OutDir>
+    <IntDir>C:\UnrealEngine5\Engine\Intermediate\Build\Unused\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|arm64'">
+    <NMakeBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeCleanCommandLine>
+    <NMakeOutput>Invalid Output</NMakeOutput>
+    <OutDir>C:\UnrealEngine5\Engine\Intermediate\Build\Unused\</OutDir>
+    <IntDir>C:\UnrealEngine5\Engine\Intermediate\Build\Unused\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|Android-arm64-v8a'">
+    <NMakeBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeCleanCommandLine>
+    <NMakeOutput>Invalid Output</NMakeOutput>
+    <OutDir>C:\UnrealEngine5\Engine\Intermediate\Build\Unused\</OutDir>
+    <IntDir>C:\UnrealEngine5\Engine\Intermediate\Build\Unused\</IntDir>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat ActionRPG Win64 Debug -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat ActionRPG Win64 Debug -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat ActionRPG Win64 Debug -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>..\..\Binaries\Win64\ActionRPG-Win64-Debug.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Editor|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Editor|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat -Target="ActionRPGEditor Win64 Debug -Project=\"$(SolutionDir)ActionRPG.uproject\"" -Target="ShaderCompileWorker Win64 Development -Quiet" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat -Target="ActionRPGEditor Win64 Debug -Project=\"$(SolutionDir)ActionRPG.uproject\"" -Target="ShaderCompileWorker Win64 Development -Quiet" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat -Target="ActionRPGEditor Win64 Debug -Project=\"$(SolutionDir)ActionRPG.uproject\"" -Target="ShaderCompileWorker Win64 Development -Quiet" -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Win64\UnrealEditor-Win64-Debug.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat ActionRPG HoloLens Debug -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat ActionRPG HoloLens Debug -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat ActionRPG HoloLens Debug -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>..\..\Binaries\HoloLens\ActionRPG-HoloLens-Debug.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+		<AdditionalOptions>/ZW /ZW:nostdlib</AdditionalOptions>
+		<NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions);PLATFORM_HOLOLENS=1;HOLOLENS=1;</NMakePreprocessorDefinitions>
+		<NMakeAssemblySearchPath>$(NMakeAssemblySearchPath);C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\lib\x86\Store\references</NMakeAssemblySearchPath>
+		<NMakeForcedUsingAssemblies>$(NMakeForcedUsingAssemblies);C:\Program Files (x86)\Windows Kits\10\References\10.0.19041.0\Windows.Foundation.FoundationContract\4.0.0.0\Windows.Foundation.FoundationContract.winmd;C:\Program Files (x86)\Windows Kits\10\References\10.0.19041.0\Windows.Foundation.UniversalApiContract\10.0.0.0\Windows.Foundation.UniversalApiContract.winmd;platform.winmd</NMakeForcedUsingAssemblies>
+  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">
+		<RemoveExtraDeployFiles>false</RemoveExtraDeployFiles>
+		<LayoutDir>C:\UEProjects\ActionRPG\Binaries\HoloLens\AppX</LayoutDir>
+		<AppxPackageRecipe>C:\UEProjects\ActionRPG\Binaries\HoloLens\ActionRPG.build.appxrecipe</AppxPackageRecipe>
+	</PropertyGroup>
+    <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">
+		<PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\AppHostDebugger_Local.xml" />
+		<PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\AppHostDebugger_Simulator.xml" />
+		<PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\AppHostDebugger_Remote.xml" />
+    </ItemGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android-arm64-v8a'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android-arm64-v8a'">
+    <AndroidApkLocation>C:\UEProjects\ActionRPG\Binaries\Android\ActionRPG-Android-Debug-arm64.apk</AndroidApkLocation>
+    <AndroidSymbolDirectories>C:\UEProjects\ActionRPG\Intermediate\Android\arm64\jni\arm64-v8a;C:\UEProjects\ActionRPG\Intermediate\Android\arm64\libs\arm64-v8a</AndroidSymbolDirectories>
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat ActionRPG Android Debug -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat ActionRPG Android Debug -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat ActionRPG Android Debug -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeCleanCommandLine>
+    <NMakeOutput>..\..\Binaries\Android\ActionRPG-Android-Debug.so</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat ActionRPG Win64 DebugGame -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat ActionRPG Win64 DebugGame -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat ActionRPG Win64 DebugGame -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>..\..\Binaries\Win64\ActionRPG-Win64-DebugGame.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat -Target="ActionRPGEditor Win64 DebugGame -Project=\"$(SolutionDir)ActionRPG.uproject\"" -Target="ShaderCompileWorker Win64 Development -Quiet" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat -Target="ActionRPGEditor Win64 DebugGame -Project=\"$(SolutionDir)ActionRPG.uproject\"" -Target="ShaderCompileWorker Win64 Development -Quiet" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat -Target="ActionRPGEditor Win64 DebugGame -Project=\"$(SolutionDir)ActionRPG.uproject\"" -Target="ShaderCompileWorker Win64 Development -Quiet" -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Win64\UnrealEditor-Win64-DebugGame.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame|arm64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame|arm64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat ActionRPG HoloLens DebugGame -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat ActionRPG HoloLens DebugGame -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat ActionRPG HoloLens DebugGame -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>..\..\Binaries\HoloLens\ActionRPG-HoloLens-DebugGame.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+		<AdditionalOptions>/ZW /ZW:nostdlib</AdditionalOptions>
+		<NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions);PLATFORM_HOLOLENS=1;HOLOLENS=1;</NMakePreprocessorDefinitions>
+		<NMakeAssemblySearchPath>$(NMakeAssemblySearchPath);C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\lib\x86\Store\references</NMakeAssemblySearchPath>
+		<NMakeForcedUsingAssemblies>$(NMakeForcedUsingAssemblies);C:\Program Files (x86)\Windows Kits\10\References\10.0.19041.0\Windows.Foundation.FoundationContract\4.0.0.0\Windows.Foundation.FoundationContract.winmd;C:\Program Files (x86)\Windows Kits\10\References\10.0.19041.0\Windows.Foundation.UniversalApiContract\10.0.0.0\Windows.Foundation.UniversalApiContract.winmd;platform.winmd</NMakeForcedUsingAssemblies>
+  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame|arm64'">
+		<RemoveExtraDeployFiles>false</RemoveExtraDeployFiles>
+		<LayoutDir>C:\UEProjects\ActionRPG\Binaries\HoloLens\AppX</LayoutDir>
+		<AppxPackageRecipe>C:\UEProjects\ActionRPG\Binaries\HoloLens\ActionRPG.build.appxrecipe</AppxPackageRecipe>
+	</PropertyGroup>
+    <ItemGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame|arm64'">
+		<PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\AppHostDebugger_Local.xml" />
+		<PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\AppHostDebugger_Simulator.xml" />
+		<PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\AppHostDebugger_Remote.xml" />
+    </ItemGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame|Android-arm64-v8a'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame|Android-arm64-v8a'">
+    <AndroidApkLocation>C:\UEProjects\ActionRPG\Binaries\Android\ActionRPG-Android-DebugGame-arm64.apk</AndroidApkLocation>
+    <AndroidSymbolDirectories>C:\UEProjects\ActionRPG\Intermediate\Android\arm64\jni\arm64-v8a;C:\UEProjects\ActionRPG\Intermediate\Android\arm64\libs\arm64-v8a</AndroidSymbolDirectories>
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat ActionRPG Android DebugGame -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat ActionRPG Android DebugGame -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat ActionRPG Android DebugGame -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeCleanCommandLine>
+    <NMakeOutput>..\..\Binaries\Android\ActionRPG-Android-DebugGame.so</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat ActionRPG Win64 Development -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat ActionRPG Win64 Development -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat ActionRPG Win64 Development -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>..\..\Binaries\Win64\ActionRPG.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat -Target="ActionRPGEditor Win64 Development -Project=\"$(SolutionDir)ActionRPG.uproject\"" -Target="ShaderCompileWorker Win64 Development -Quiet" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat -Target="ActionRPGEditor Win64 Development -Project=\"$(SolutionDir)ActionRPG.uproject\"" -Target="ShaderCompileWorker Win64 Development -Quiet" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat -Target="ActionRPGEditor Win64 Development -Project=\"$(SolutionDir)ActionRPG.uproject\"" -Target="ShaderCompileWorker Win64 Development -Quiet" -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\UnrealEngine5\Engine\Binaries\Win64\UnrealEditor.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development|arm64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|arm64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat ActionRPG HoloLens Development -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat ActionRPG HoloLens Development -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat ActionRPG HoloLens Development -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>..\..\Binaries\HoloLens\ActionRPG.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+		<AdditionalOptions>/ZW /ZW:nostdlib</AdditionalOptions>
+		<NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions);PLATFORM_HOLOLENS=1;HOLOLENS=1;</NMakePreprocessorDefinitions>
+		<NMakeAssemblySearchPath>$(NMakeAssemblySearchPath);C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\lib\x86\Store\references</NMakeAssemblySearchPath>
+		<NMakeForcedUsingAssemblies>$(NMakeForcedUsingAssemblies);C:\Program Files (x86)\Windows Kits\10\References\10.0.19041.0\Windows.Foundation.FoundationContract\4.0.0.0\Windows.Foundation.FoundationContract.winmd;C:\Program Files (x86)\Windows Kits\10\References\10.0.19041.0\Windows.Foundation.UniversalApiContract\10.0.0.0\Windows.Foundation.UniversalApiContract.winmd;platform.winmd</NMakeForcedUsingAssemblies>
+  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|arm64'">
+		<RemoveExtraDeployFiles>false</RemoveExtraDeployFiles>
+		<LayoutDir>C:\UEProjects\ActionRPG\Binaries\HoloLens\AppX</LayoutDir>
+		<AppxPackageRecipe>C:\UEProjects\ActionRPG\Binaries\HoloLens\ActionRPG.build.appxrecipe</AppxPackageRecipe>
+	</PropertyGroup>
+    <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Development|arm64'">
+		<PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\AppHostDebugger_Local.xml" />
+		<PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\AppHostDebugger_Simulator.xml" />
+		<PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\AppHostDebugger_Remote.xml" />
+    </ItemGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development|Android-arm64-v8a'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|Android-arm64-v8a'">
+    <AndroidApkLocation>C:\UEProjects\ActionRPG\Binaries\Android\ActionRPG-arm64.apk</AndroidApkLocation>
+    <AndroidSymbolDirectories>C:\UEProjects\ActionRPG\Intermediate\Android\arm64\jni\arm64-v8a;C:\UEProjects\ActionRPG\Intermediate\Android\arm64\libs\arm64-v8a</AndroidSymbolDirectories>
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat ActionRPG Android Development -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat ActionRPG Android Development -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat ActionRPG Android Development -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeCleanCommandLine>
+    <NMakeOutput>..\..\Binaries\Android\ActionRPG.so</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat ActionRPG Win64 Test -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat ActionRPG Win64 Test -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat ActionRPG Win64 Test -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>..\..\Binaries\Win64\ActionRPG-Win64-Test.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test|arm64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test|arm64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat ActionRPG HoloLens Test -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat ActionRPG HoloLens Test -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat ActionRPG HoloLens Test -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>..\..\Binaries\HoloLens\ActionRPG-HoloLens-Test.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+		<AdditionalOptions>/ZW /ZW:nostdlib</AdditionalOptions>
+		<NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions);PLATFORM_HOLOLENS=1;HOLOLENS=1;</NMakePreprocessorDefinitions>
+		<NMakeAssemblySearchPath>$(NMakeAssemblySearchPath);C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\lib\x86\Store\references</NMakeAssemblySearchPath>
+		<NMakeForcedUsingAssemblies>$(NMakeForcedUsingAssemblies);C:\Program Files (x86)\Windows Kits\10\References\10.0.19041.0\Windows.Foundation.FoundationContract\4.0.0.0\Windows.Foundation.FoundationContract.winmd;C:\Program Files (x86)\Windows Kits\10\References\10.0.19041.0\Windows.Foundation.UniversalApiContract\10.0.0.0\Windows.Foundation.UniversalApiContract.winmd;platform.winmd</NMakeForcedUsingAssemblies>
+  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test|arm64'">
+		<RemoveExtraDeployFiles>false</RemoveExtraDeployFiles>
+		<LayoutDir>C:\UEProjects\ActionRPG\Binaries\HoloLens\AppX</LayoutDir>
+		<AppxPackageRecipe>C:\UEProjects\ActionRPG\Binaries\HoloLens\ActionRPG.build.appxrecipe</AppxPackageRecipe>
+	</PropertyGroup>
+    <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Test|arm64'">
+		<PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\AppHostDebugger_Local.xml" />
+		<PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\AppHostDebugger_Simulator.xml" />
+		<PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\AppHostDebugger_Remote.xml" />
+    </ItemGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test|Android-arm64-v8a'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test|Android-arm64-v8a'">
+    <AndroidApkLocation>C:\UEProjects\ActionRPG\Binaries\Android\ActionRPG-Android-Test-arm64.apk</AndroidApkLocation>
+    <AndroidSymbolDirectories>C:\UEProjects\ActionRPG\Intermediate\Android\arm64\jni\arm64-v8a;C:\UEProjects\ActionRPG\Intermediate\Android\arm64\libs\arm64-v8a</AndroidSymbolDirectories>
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat ActionRPG Android Test -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat ActionRPG Android Test -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat ActionRPG Android Test -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeCleanCommandLine>
+    <NMakeOutput>..\..\Binaries\Android\ActionRPG-Android-Test.so</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat ActionRPG Win64 Shipping -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat ActionRPG Win64 Shipping -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat ActionRPG Win64 Shipping -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>..\..\Binaries\Win64\ActionRPG-Win64-Shipping.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|arm64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|arm64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat ActionRPG HoloLens Shipping -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat ActionRPG HoloLens Shipping -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat ActionRPG HoloLens Shipping -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>..\..\Binaries\HoloLens\ActionRPG-HoloLens-Shipping.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+		<AdditionalOptions>/ZW /ZW:nostdlib</AdditionalOptions>
+		<NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions);PLATFORM_HOLOLENS=1;HOLOLENS=1;</NMakePreprocessorDefinitions>
+		<NMakeAssemblySearchPath>$(NMakeAssemblySearchPath);C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\lib\x86\Store\references</NMakeAssemblySearchPath>
+		<NMakeForcedUsingAssemblies>$(NMakeForcedUsingAssemblies);C:\Program Files (x86)\Windows Kits\10\References\10.0.19041.0\Windows.Foundation.FoundationContract\4.0.0.0\Windows.Foundation.FoundationContract.winmd;C:\Program Files (x86)\Windows Kits\10\References\10.0.19041.0\Windows.Foundation.UniversalApiContract\10.0.0.0\Windows.Foundation.UniversalApiContract.winmd;platform.winmd</NMakeForcedUsingAssemblies>
+  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|arm64'">
+		<RemoveExtraDeployFiles>false</RemoveExtraDeployFiles>
+		<LayoutDir>C:\UEProjects\ActionRPG\Binaries\HoloLens\AppX</LayoutDir>
+		<AppxPackageRecipe>C:\UEProjects\ActionRPG\Binaries\HoloLens\ActionRPG.build.appxrecipe</AppxPackageRecipe>
+	</PropertyGroup>
+    <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|arm64'">
+		<PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\AppHostDebugger_Local.xml" />
+		<PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\AppHostDebugger_Simulator.xml" />
+		<PropertyPageSchema Include="$(VCTargetsPath)$(LangID)\AppHostDebugger_Remote.xml" />
+    </ItemGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|Android-arm64-v8a'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|Android-arm64-v8a'">
+    <AndroidApkLocation>C:\UEProjects\ActionRPG\Binaries\Android\ActionRPG-Android-Shipping-arm64.apk</AndroidApkLocation>
+    <AndroidSymbolDirectories>C:\UEProjects\ActionRPG\Intermediate\Android\arm64\jni\arm64-v8a;C:\UEProjects\ActionRPG\Intermediate\Android\arm64\libs\arm64-v8a</AndroidSymbolDirectories>
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Build.bat ActionRPG Android Shipping -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Rebuild.bat ActionRPG Android Shipping -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>C:\UnrealEngine5\Engine\Build\BatchFiles\Clean.bat ActionRPG Android Shipping -Project="$(SolutionDir)ActionRPG.uproject" -WaitMutex -FromMsBuild -Architectures=arm64 -ForceAPKGeneration</NMakeCleanCommandLine>
+    <NMakeOutput>..\..\Binaries\Android\ActionRPG-Android-Shipping.so</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <IncludePath>$(IncludePath);C:\UnrealEngine5\Engine\Source;..\Build\Win64\UnrealEditor\Inc\ActionRPG;..\..\Source;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Core;C:\UnrealEngine5\Engine\Source\Runtime;C:\UnrealEngine5\Engine\Source\Runtime\TraceLog\Public;C:\UnrealEngine5\Engine\Source\Runtime\Core\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TraceLog;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject;C:\UnrealEngine5\Engine\Source\Runtime\CoreUObject\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Engine;C:\UnrealEngine5\Engine\Shaders\Shared;C:\UnrealEngine5\Engine\Source\Runtime\Engine\Classes;C:\UnrealEngine5\Engine\Source\Runtime\Engine\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\CoreOnline;C:\UnrealEngine5\Engine\Source\Runtime\CoreOnline\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\NetCore;C:\UnrealEngine5\Engine\Source\Runtime\Net;C:\UnrealEngine5\Engine\Source\Runtime\Net\Core\Classes;C:\UnrealEngine5\Engine\Source\Runtime\Net\Core\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\NetCommon;C:\UnrealEngine5\Engine\Source\Runtime\Net\Common\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ApplicationCore;C:\UnrealEngine5\Engine\Source\Runtime\ApplicationCore\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\RHI;C:\UnrealEngine5\Engine\Source\Runtime\RHI\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Json;C:\UnrealEngine5\Engine\Source\Runtime\Json\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\JsonUtilities;C:\UnrealEngine5\Engine\Source\Runtime\JsonUtilities\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SlateCore;C:\UnrealEngine5\Engine\Source\Runtime\SlateCore\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\InputCore;C:\UnrealEngine5\Engine\Source\Runtime\InputCore\Classes;C:\UnrealEngine5\Engine\Source\Runtime\InputCore\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Slate;C:\UnrealEngine5\Engine\Source\Runtime\Slate\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ImageWrapper;C:\UnrealEngine5\Engine\Source\Runtime\ImageWrapper\Public;C:\UnrealEngine5\Engine\Source\ThirdParty;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Messaging;C:\UnrealEngine5\Engine\Source\Runtime\Messaging\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MessagingCommon;C:\UnrealEngine5\Engine\Source\Runtime\MessagingCommon\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\RenderCore;C:\UnrealEngine5\Engine\Source\Runtime\RenderCore\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AnalyticsET;C:\UnrealEngine5\Engine\Source\Runtime\Analytics;C:\UnrealEngine5\Engine\Source\Runtime\Analytics\AnalyticsET\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Analytics;C:\UnrealEngine5\Engine\Source\Runtime\Analytics\Analytics\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Sockets;C:\UnrealEngine5\Engine\Source\Runtime\Sockets\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AssetRegistry;C:\UnrealEngine5\Engine\Source\Runtime\AssetRegistry\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\EngineMessages;C:\UnrealEngine5\Engine\Source\Runtime\EngineMessages\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\EngineSettings;C:\UnrealEngine5\Engine\Source\Runtime\EngineSettings\Classes;C:\UnrealEngine5\Engine\Source\Runtime\EngineSettings\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SynthBenchmark;C:\UnrealEngine5\Engine\Source\Runtime\SynthBenchmark\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Renderer;C:\UnrealEngine5\Engine\Source\Runtime\Renderer\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\GameplayTags;C:\UnrealEngine5\Engine\Source\Runtime\GameplayTags\Classes;C:\UnrealEngine5\Engine\Source\Runtime\GameplayTags\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\DeveloperSettings;C:\UnrealEngine5\Engine\Source\Runtime\DeveloperSettings\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\PacketHandler;C:\UnrealEngine5\Engine\Source\Runtime\PacketHandlers;C:\UnrealEngine5\Engine\Source\Runtime\PacketHandlers\PacketHandler\Classes;C:\UnrealEngine5\Engine\Source\Runtime\PacketHandlers\PacketHandler\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ReliabilityHandlerComponent;C:\UnrealEngine5\Engine\Source\Runtime\PacketHandlers\ReliabilityHandlerComponent\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioPlatformConfiguration;C:\UnrealEngine5\Engine\Source\Runtime\AudioPlatformConfiguration\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MeshDescription;C:\UnrealEngine5\Engine\Source\Runtime\MeshDescription\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\StaticMeshDescription;C:\UnrealEngine5\Engine\Source\Runtime\StaticMeshDescription\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SkeletalMeshDescription;C:\UnrealEngine5\Engine\Source\Runtime\SkeletalMeshDescription\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationCore;C:\UnrealEngine5\Engine\Source\Runtime\AnimationCore\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\PakFile;C:\UnrealEngine5\Engine\Source\Runtime\PakFile\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\RSA;C:\UnrealEngine5\Engine\Source\Runtime\RSA\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\NetworkReplayStreaming;C:\UnrealEngine5\Engine\Source\Runtime\NetworkReplayStreaming;C:\UnrealEngine5\Engine\Source\Runtime\NetworkReplayStreaming\NetworkReplayStreaming\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\PhysicsCore;C:\UnrealEngine5\Engine\Source\Runtime\PhysicsCore\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Chaos;C:\UnrealEngine5\Engine\Source\Runtime\Experimental;C:\UnrealEngine5\Engine\Source\Runtime\Experimental\Chaos\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ChaosCore;C:\UnrealEngine5\Engine\Source\Runtime\Experimental\ChaosCore\Public;C:\UnrealEngine5\Engine\Source\ThirdParty\Intel;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Voronoi;C:\UnrealEngine5\Engine\Source\Runtime\Experimental\Voronoi\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\GeometryCore;C:\UnrealEngine5\Engine\Source\Runtime\GeometryCore\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SignalProcessing;C:\UnrealEngine5\Engine\Source\Runtime\SignalProcessing\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioExtensions;C:\UnrealEngine5\Engine\Source\Runtime\AudioExtensions\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioMixerCore;C:\UnrealEngine5\Engine\Source\Runtime\AudioMixerCore\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioLinkCore;C:\UnrealEngine5\Engine\Source\Runtime\AudioLink;C:\UnrealEngine5\Engine\Source\Runtime\AudioLink\AudioLinkCore\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\CookOnTheFly;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UnrealEd;C:\UnrealEngine5\Engine\Source\Editor;C:\UnrealEngine5\Engine\Source\Programs\UnrealLightmass\Public;C:\UnrealEngine5\Engine\Source\Editor\UnrealEd\Classes;C:\UnrealEngine5\Engine\Source\Editor\UnrealEd\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\DirectoryWatcher;C:\UnrealEngine5\Engine\Source\Developer;C:\UnrealEngine5\Engine\Source\Developer\DirectoryWatcher\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Documentation;C:\UnrealEngine5\Engine\Source\Editor\Documentation\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Projects;C:\UnrealEngine5\Engine\Source\Runtime\Projects\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SandboxFile;C:\UnrealEngine5\Engine\Source\Runtime\SandboxFile\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\EditorFramework;C:\UnrealEngine5\Engine\Source\Editor\EditorFramework\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\EditorSubsystem;C:\UnrealEngine5\Engine\Source\Editor\EditorSubsystem\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\InteractiveToolsFramework;C:\UnrealEngine5\Engine\Source\Runtime\InteractiveToolsFramework\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TypedElementFramework;C:\UnrealEngine5\Engine\Source\Runtime\TypedElementFramework\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TypedElementRuntime;C:\UnrealEngine5\Engine\Source\Runtime\TypedElementRuntime\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\EditorStyle;C:\UnrealEngine5\Engine\Source\Editor\EditorStyle\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SourceControl;C:\UnrealEngine5\Engine\Source\Developer\SourceControl\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UncontrolledChangelists;C:\UnrealEngine5\Engine\Source\Developer\UncontrolledChangelists\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UnrealEdMessages;C:\UnrealEngine5\Engine\Source\Editor\UnrealEdMessages\Classes;C:\UnrealEngine5\Engine\Source\Editor\UnrealEdMessages\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\GameplayDebugger;C:\UnrealEngine5\Engine\Source\Developer\GameplayDebugger\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\BlueprintGraph;C:\UnrealEngine5\Engine\Source\Editor\BlueprintGraph\Classes;C:\UnrealEngine5\Engine\Source\Editor\BlueprintGraph\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\HTTP;C:\UnrealEngine5\Engine\Source\Runtime\Online;C:\UnrealEngine5\Engine\Source\Runtime\Online\HTTP\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\FunctionalTesting;C:\UnrealEngine5\Engine\Source\Developer\FunctionalTesting\Classes;C:\UnrealEngine5\Engine\Source\Developer\FunctionalTesting\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AutomationController;C:\UnrealEngine5\Engine\Source\Developer\AutomationController\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AutomationTest;C:\UnrealEngine5\Engine\Source\Runtime\AutomationTest\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Localization;C:\UnrealEngine5\Engine\Source\Developer\Localization\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioEditor;C:\UnrealEngine5\Engine\Source\Editor\AudioEditor\Classes;C:\UnrealEngine5\Engine\Source\Editor\AudioEditor\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioMixer;C:\UnrealEngine5\Engine\Source\Runtime\AudioMixer\Classes;C:\UnrealEngine5\Engine\Source\Runtime\AudioMixer\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioLinkEngine;C:\UnrealEngine5\Engine\Source\Runtime\AudioLink\AudioLinkEngine\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TargetPlatform;C:\UnrealEngine5\Engine\Source\Developer\TargetPlatform\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TextureFormat;C:\UnrealEngine5\Engine\Source\Developer\TextureFormat\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\LevelEditor;C:\UnrealEngine5\Engine\Source\Editor\LevelEditor\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Settings;C:\UnrealEngine5\Engine\Source\Developer\Settings\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\IntroTutorials;C:\UnrealEngine5\Engine\Source\Editor\IntroTutorials\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\HeadMountedDisplay;C:\UnrealEngine5\Engine\Source\Runtime\HeadMountedDisplay\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\VREditor;C:\UnrealEngine5\Engine\Source\Editor\VREditor;C:\UnrealEngine5\Engine\Source\Editor\VREditor\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\CommonMenuExtensions;C:\UnrealEngine5\Engine\Source\Editor\CommonMenuExtensions\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Landscape;C:\UnrealEngine5\Engine\Source\Runtime\Landscape\Classes;C:\UnrealEngine5\Engine\Source\Runtime\Landscape\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\PropertyEditor;C:\UnrealEngine5\Engine\Source\Editor\PropertyEditor\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ActorPickerMode;C:\UnrealEngine5\Engine\Source\Editor\ActorPickerMode\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SceneDepthPickerMode;C:\UnrealEngine5\Engine\Source\Editor\SceneDepthPickerMode\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\EditorConfig;C:\UnrealEngine5\Engine\Source\Editor\EditorConfig\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\DetailCustomizations;C:\UnrealEngine5\Engine\Source\Editor\DetailCustomizations\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ClassViewer;C:\UnrealEngine5\Engine\Source\Editor\ClassViewer\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\GraphEditor;C:\UnrealEngine5\Engine\Source\Editor\GraphEditor\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\StructViewer;C:\UnrealEngine5\Engine\Source\Editor\StructViewer\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ContentBrowser;C:\UnrealEngine5\Engine\Source\Editor\ContentBrowser\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ContentBrowserData;C:\UnrealEngine5\Engine\Source\Editor\ContentBrowserData\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\CollectionManager;C:\UnrealEngine5\Engine\Source\Developer\CollectionManager\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UELibSampleRate;C:\UnrealEngine5\Engine\Source\ThirdParty\libSampleRate\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\NetworkFileSystem;C:\UnrealEngine5\Engine\Source\Runtime\NetworkFileSystem\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UMG;C:\UnrealEngine5\Engine\Source\Runtime\UMG\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MovieScene;C:\UnrealEngine5\Engine\Source\Runtime\MovieScene\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TimeManagement;C:\UnrealEngine5\Engine\Source\Runtime\TimeManagement\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MovieSceneTracks;C:\UnrealEngine5\Engine\Source\Runtime\MovieSceneTracks\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\PropertyPath;C:\UnrealEngine5\Engine\Source\Runtime\PropertyPath\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\NavigationSystem;C:\UnrealEngine5\Engine\Source\Runtime\NavigationSystem\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\GeometryCollectionEngine;C:\UnrealEngine5\Engine\Source\Runtime\Experimental\GeometryCollectionEngine\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MaterialShaderQualitySettings;C:\UnrealEngine5\Engine\Source\Runtime\MaterialShaderQualitySettings\Classes;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\FieldSystemEngine;C:\UnrealEngine5\Engine\Source\Runtime\Experimental\FieldSystem\Source;C:\UnrealEngine5\Engine\Source\Runtime\Experimental\FieldSystem\Source\FieldSystemEngine\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ChaosSolverEngine;C:\UnrealEngine5\Engine\Source\Runtime\Experimental\ChaosSolverEngine\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MeshBuilder;C:\UnrealEngine5\Engine\Source\Developer\MeshBuilder\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ToolMenusEditor;C:\UnrealEngine5\Engine\Source\Editor\ToolMenusEditor\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ToolMenus;C:\UnrealEngine5\Engine\Source\Developer\ToolMenus\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\StatusBar;C:\UnrealEngine5\Engine\Source\Editor\StatusBar\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\InterchangeCore;C:\UnrealEngine5\Engine\Source\Runtime\Experimental\Interchange;C:\UnrealEngine5\Engine\Source\Runtime\Experimental\Interchange\Core\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\InterchangeEngine;C:\UnrealEngine5\Engine\Source\Runtime\Experimental\Interchange\Engine\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\DeveloperToolSettings;C:\UnrealEngine5\Engine\Source\Developer\DeveloperToolSettings\Classes;C:\UnrealEngine5\Engine\Source\Developer\DeveloperToolSettings\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SubobjectDataInterface;C:\UnrealEngine5\Engine\Source\Editor\SubobjectDataInterface\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SubobjectEditor;C:\UnrealEngine5\Engine\Source\Editor\SubobjectEditor\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Kismet;C:\UnrealEngine5\Engine\Source\Editor\Kismet\Classes;C:\UnrealEngine5\Engine\Source\Editor\Kismet\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\PhysicsUtilities;C:\UnrealEngine5\Engine\Source\Developer\PhysicsUtilities\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ToolWidgets;C:\UnrealEngine5\Engine\Source\Developer\ToolWidgets\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioMixerXAudio2;C:\UnrealEngine5\Engine\Source\Runtime\Windows;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AssetTagsEditor;C:\UnrealEngine5\Engine\Source\Editor\AssetTagsEditor\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AddContentDialog;C:\UnrealEngine5\Engine\Source\Editor\AddContentDialog\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MeshUtilities;C:\UnrealEngine5\Engine\Source\Developer\MeshUtilities\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MeshMergeUtilities;C:\UnrealEngine5\Engine\Source\Developer\MeshMergeUtilities\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\HierarchicalLODUtilities;C:\UnrealEngine5\Engine\Source\Developer\HierarchicalLODUtilities\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MeshReductionInterface;C:\UnrealEngine5\Engine\Source\Developer\MeshReductionInterface\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SkeletalMeshEditor;C:\UnrealEngine5\Engine\Source\Editor\SkeletalMeshEditor\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Persona;C:\UnrealEngine5\Engine\Source\Editor\Persona\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SkeletonEditor;C:\UnrealEngine5\Engine\Source\Editor\SkeletonEditor\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationWidgets;C:\UnrealEngine5\Engine\Source\Developer\AnimationWidgets\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationEditor;C:\UnrealEngine5\Engine\Source\Editor\AnimationEditor\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AdvancedPreviewScene;C:\UnrealEngine5\Engine\Source\Editor\AdvancedPreviewScene\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AssetTools;C:\UnrealEngine5\Engine\Source\Developer\AssetTools\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\KismetCompiler;C:\UnrealEngine5\Engine\Source\Editor\KismetCompiler\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\GameplayTasks;C:\UnrealEngine5\Engine\Source\Runtime\GameplayTasks\Classes;C:\UnrealEngine5\Engine\Source\Runtime\GameplayTasks\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AIModule;C:\UnrealEngine5\Engine\Source\Runtime\AIModule\Public;C:\UnrealEngine5\Engine\Source\Runtime\AIModule\Classes;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ClothingSystemRuntimeInterface;C:\UnrealEngine5\Engine\Source\Runtime\ClothingSystemRuntimeInterface\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController;C:\UnrealEngine5\Engine\Source\Developer\AnimationDataController\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AugmentedReality;C:\UnrealEngine5\Engine\Source\Runtime\AugmentedReality\Public;C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MRMesh;C:\UnrealEngine5\Engine\Source\Runtime\MRMesh\Public;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\INCLUDE;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.2\include\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt;;</IncludePath>
+    <NMakeForcedIncludes>$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeAssemblySearchPath>$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\ActionRPG.uproject"/>
+    <None Include="..\..\Source\ActionRPG.Target.cs"/>
+    <None Include="..\..\Source\ActionRPGEditor.Target.cs"/>
+    <None Include="..\..\Config\DefaultEditor.ini"/>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini"/>
+    <None Include="..\..\Config\DefaultEngine.ini"/>
+    <None Include="..\..\Config\DefaultGame.ini"/>
+    <None Include="..\..\Config\DefaultInput.ini"/>
+    <None Include="..\..\Source\ActionRPG\ActionRPG.Build.cs"/>
+    <ClCompile Include="..\..\Source\ActionRPG\ActionRPG.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\UnrealEngine5\Engine\Source\ThirdParty\mimalloc\include;C:\UnrealEngine5\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\UnrealEngine5\Engine\Source\ThirdParty\LibTiff\Source;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PxShared\include;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PxShared\include\cudamanager;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PxShared\include\filebuf;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PxShared\include\foundation;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PxShared\include\pvd;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PxShared\include\task;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\cooking;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\common;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\extensions;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\geometry;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h;$(SolutionDir)Intermediate\Build\Win64\UnrealEditor\Development\ActionRPG\Definitions.ActionRPG.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ActionRPG\ActionRPG.h"/>
+    <ClCompile Include="..\..\Source\ActionRPG\ActionRPGCharacter.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\UnrealEngine5\Engine\Source\ThirdParty\mimalloc\include;C:\UnrealEngine5\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\UnrealEngine5\Engine\Source\ThirdParty\LibTiff\Source;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PxShared\include;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PxShared\include\cudamanager;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PxShared\include\filebuf;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PxShared\include\foundation;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PxShared\include\pvd;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PxShared\include\task;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\cooking;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\common;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\extensions;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\geometry;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h;$(SolutionDir)Intermediate\Build\Win64\UnrealEditor\Development\ActionRPG\Definitions.ActionRPG.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ActionRPG\ActionRPGCharacter.h"/>
+    <ClCompile Include="..\..\Source\ActionRPG\ActionRPGGameMode.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);C:\UnrealEngine5\Engine\Source\ThirdParty\mimalloc\include;C:\UnrealEngine5\Engine\Source\ThirdParty\LibTiff\Source\Win64;C:\UnrealEngine5\Engine\Source\ThirdParty\LibTiff\Source;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PxShared\include;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PxShared\include\cudamanager;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PxShared\include\filebuf;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PxShared\include\foundation;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PxShared\include\pvd;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PxShared\include\task;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\cooking;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\common;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\extensions;C:\UnrealEngine5\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\geometry;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\UnrealEngine5\Engine\Intermediate\Build\Win64\UnrealEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h;$(SolutionDir)Intermediate\Build\Win64\UnrealEditor\Development\ActionRPG\Definitions.ActionRPG.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ActionRPG\ActionRPGGameMode.h"/>
+  </ItemGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <PropertyGroup>
+    <CleanDependsOn> $(CleanDependsOn); </CleanDependsOn>
+    <CppCleanDependsOn></CppCleanDependsOn>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

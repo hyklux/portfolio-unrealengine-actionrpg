@@ -1,0 +1,13 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\ueprojects\\actionrpg\\intermediate\\build\\win64\\unrealeditor\\inc\\actionrpg\\actionrpg.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unrealengine5\\engine\\intermediate\\build\\win64\\unrealeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\ueprojects\\actionrpg\\intermediate\\build\\win64\\unrealeditor\\development\\actionrpg\\definitions.actionrpg.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

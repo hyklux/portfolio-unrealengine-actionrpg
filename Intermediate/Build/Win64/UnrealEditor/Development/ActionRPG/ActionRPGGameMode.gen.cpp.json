@@ -1,0 +1,19 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\ueprojects\\actionrpg\\intermediate\\build\\win64\\unrealeditor\\inc\\actionrpg\\actionrpggamemode.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unrealengine5\\engine\\intermediate\\build\\win64\\unrealeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\ueprojects\\actionrpg\\intermediate\\build\\win64\\unrealeditor\\development\\actionrpg\\definitions.actionrpg.h",
+            "c:\\ueprojects\\actionrpg\\source\\actionrpg\\actionrpggamemode.h",
+            "c:\\unrealengine5\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\unrealengine5\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\unrealengine5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\serverstatreplicator.generated.h",
+            "c:\\unrealengine5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gamemodebase.generated.h",
+            "c:\\ueprojects\\actionrpg\\intermediate\\build\\win64\\unrealeditor\\inc\\actionrpg\\actionrpggamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
